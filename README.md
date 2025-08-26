@@ -243,10 +243,10 @@ Test Predictions:
 ### Adjust TF-IDF Parameters:
 ```python
 vectorizer = TfidfVectorizer(
-    max_features=5000,      # Increase vocabulary size
-    ngram_range=(1, 2),     # Include bigrams
-    min_df=2,               # Minimum document frequency
-    max_df=0.95             # Maximum document frequency
+    max_features=5000,      
+    ngram_range=(1, 2),     
+    min_df=2,               
+    max_df=0.95             
 )
 ```
 
@@ -254,9 +254,9 @@ vectorizer = TfidfVectorizer(
 ```python
 def clean_text(text):
     text = text.lower()
-    text = re.sub(r'http\S+', '', text)     # Remove URLs
-    text = re.sub(r'\d+', '', text)         # Remove numbers
-    text = re.sub(r'[^\w\s]', '', text)     # Remove punctuation
+    text = re.sub(r'http\S+', '', text)     
+    text = re.sub(r'\d+', '', text)         
+    text = re.sub(r'[^\w\s]', '', text)     
     # ... rest of the function
 ```
 
